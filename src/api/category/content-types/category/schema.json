@@ -19,6 +19,9 @@
       "relation": "oneToOne",
       "target": "api::product.product",
       "inversedBy": "category"
+    },
+    "test": {
+      "type": "string"
     }
   }
 }
