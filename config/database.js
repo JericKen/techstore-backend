@@ -1,7 +1,6 @@
 const path = require('path');
 
 module.exports = ({ env }) => {
-  console.log(process.env);
   const client = env('DATABASE_CLIENT', 'sqlite');
 
   const connections = {
