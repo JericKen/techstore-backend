@@ -26,17 +26,30 @@
         "Cancelled"
       ]
     },
-    "users_permissions_user": {
+    "user": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "order"
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": ""
+            },
+            ""
+          ]
+        }
+      },
+      "inversedBy": "orders"
     },
     "order_item": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::order-item.order-item",
       "mappedBy": "order"
+    },
+    "total": {
+      "type": "decimal"
     }
   }
 }
