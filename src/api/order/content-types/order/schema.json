@@ -34,6 +34,15 @@
     },
     "total": {
       "type": "decimal"
+    },
+    "userId": {
+      "type": "integer"
+    },
+    "username": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
